@@ -17,7 +17,7 @@
 
   &__content {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.63);
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     border-radius: 50px;
     opacity: 0;
@@ -25,7 +25,7 @@
     transform: scale(0);
   }
   &__link {
-    color: white;
+    color: $white;
     padding: 5px 15px;
   }
 }
@@ -42,8 +42,8 @@
     align-items: center;
   }
   &__dot {
-    border: 1px solid white;
-    background: white;
+    border: 1px solid $white;
+    background: $white;
     display: block;
     width: 25px;
     margin-bottom: 6px;
@@ -84,7 +84,7 @@
 }
 .content {
   text-align: center;
-  color: white;
+  color: $white;
   padding: 0 64px 80px;
   @include media-breakpoint-down(xs) {
     padding: 0 30px 60px;
