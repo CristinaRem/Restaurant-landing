@@ -26,3 +26,25 @@ margin-bottom:15px;
     text-transform: uppercase;
   }
 }
+.menu-image {
+  background-size: cover;
+  position: relative;
+}
+  .menu-image-overlay {
+    @extend .overlay;
+    background: url("./assets/images/ed-min.jpg") no-repeat center;
+  }
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  padding:80px 50px;
+  margin: 0 0 0 auto;
+  width:700px;
+  &__item {
+    width: calc( 100% / 3 - 30px);
+    margin:10px;
+    background-color:rgba(0, 0, 0, 0.685);
+color:white;
+  }
+}
