@@ -9929,13 +9929,100 @@ h3 {
   }
 }
 .header {
-  background-image: url("../images/hero.jpg");
+  background-image: url("./assets/images/hero.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
   width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-menu {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+.nav-menu__content {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.63);
+  padding: 10px 20px;
+  border-radius: 50px;
+  opacity: 0;
+  transition: 0.3s;
+  transform: scale(0);
+}
+.nav-menu__link {
+  color: white;
+  padding: 5px 15px;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+}
+.hamburger__dots {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.hamburger__dot {
+  border: 1px solid white;
+  background: white;
+  display: block;
+  width: 25px;
+  margin-bottom: 6px;
+  transition: 0.3s;
+}
+
+.open .first-dot {
+  transform: translate(0, 8px) rotate(45deg);
+}
+.open .second-dot {
+  opacity: 0;
+}
+.open .third-dot {
+  transform: translate(0, -8px) rotate(-45deg);
+}
+.open .nav-menu__content {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 70px;
+}
+.logo__img {
+  width: 250px;
+}
+
+.content {
+  text-align: center;
+  color: white;
+  padding: 0 64px 80px;
+}
+.content__title {
+  font-size: 50px;
+}
+.content__subtitle {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.596);
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */
