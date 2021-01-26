@@ -1,50 +1,67 @@
 .price-menu {
   background: $whitesmoke;
-  padding:80px 64px 100px;
-  text-align:center;
+  padding: 80px 64px 100px;
+  text-align: center;
   &__title {
-margin-bottom:25px;
-font-size:48px;
+    margin-bottom: 25px;
+    font-size: 48px;
   }
   &__subtitle {
-margin-bottom:15px;
+    margin-bottom: 15px;
   }
 }
 .menu {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 
   &__item {
-    width:50%;
-    padding:30px 25px;
-    @include media-breakpoint-down(sm){
-    width:100%;
+    width: 50%;
+    padding: 30px 25px;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
   }
-  }
-  &__header{
-    margin-bottom:10px;
+  &__header {
+    margin-bottom: 10px;
     text-transform: uppercase;
   }
 }
 .menu-image {
-  background-size: cover;
+
   position: relative;
 }
-  .menu-image-overlay {
-    @extend .overlay;
-    background: url("./assets/images/ed-min.jpg") no-repeat center;
-  }
+.menu-image-overlay {
+  @extend .overlay;
+  background: url("./assets/images/ed-min.jpg") no-repeat center;
+  background-size: cover;
+}
 
 .images {
   display: flex;
   flex-wrap: wrap;
-  padding:80px 50px;
+  padding: 80px 30px;
   margin: 0 0 0 auto;
-  width:700px;
+  width: 700px;
+  justify-content: center;
   &__item {
-    width: calc( 100% / 3 - 30px);
-    margin:10px;
-    background-color:rgba(0, 0, 0, 0.685);
-color:white;
+    width: calc(100% / 3 - 30px);
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 50px 25px 45px;
+  }
+  &__icon {
+    font-size:40px;
+    margin-bottom:15px;
+  }
+  &__text {
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
   }
 }
